@@ -32,10 +32,7 @@ jobs:
         run: |
           python3 -m pip install --upgrade pip setuptools wheel
           pip3 install -e .[dev]
-
-      # Run pytest
-      - name: Run pytest
-        run: pytest
+          pytest
 
       # Install and run pre-commit
       - name: Install and run pre-commit
