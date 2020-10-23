@@ -30,8 +30,8 @@ jobs:
       # Install repository
       - name: Install repository
         run: |
-          python3 -m pip install --upgrade pip setuptools wheel
-          pip3 install -e .[dev]
+          python -m pip install --upgrade pip setuptools wheel
+          pip install -e .[dev]
           pytest
 
       # Install and run pre-commit
