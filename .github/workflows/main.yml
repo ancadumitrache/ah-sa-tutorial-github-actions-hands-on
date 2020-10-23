@@ -28,8 +28,8 @@ jobs:
       # Install repository
       - name: Install repository
         run: |
-          python3 -m pip install --upgrade pip
-          pip install -e .[dev]
+          python3 -m pip install --upgrade pip3
+          pip3 install -e .[dev]
 
       # Run pytest
       - name: Run pytest
